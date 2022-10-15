@@ -1,2 +1,3 @@
 # Modalisation_Creately_Project
-GitHub profile
+Dimensional modeling of the vehicle rental
+
