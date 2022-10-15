@@ -1,33 +1,40 @@
-In order to establish the four business processes, we have selected those that could be considered the most common in a business framed in the rental service industry.
- These processes also represent the main operations carried out by the organization:
+ In order to establish a few sample business processes, we have selected  the most common that represent the main operations carried out by the rental service company Voyage Auto:
 
-● Revenue on service sales: The organization is interested in the performance of its revenue obtained from the rental of vehicles.
-● Customer service: The company wants to know the level of satisfaction during and after the sales process as well as the commitment of its customers.
-● Product development: Managing the positioning of its service in a competitive market.
-● Human Resources Development: The company has a commission plan for sales agents but wants to know how to boost the efficiency of its employees.
-● Commercialization process (marketing): Includes all that is necessary to develop and launch a new product in the market, so the marketing of the company involves future challenges. The company currently has marketing content providers.
+● Sales revenue: the company is interested in the performance of its revenue obtained from the rental of vehicles.
+● Customer service: the company wants to know the level of satisfaction during and after the sales process as well as the commitment of its customers.
+● Product development: the company are positioning the services provided in a competitive market.
+● HR Development: the company has a commission plan for sales agents, but wants to know how to boost the efficiency of its employees.
+● Commercialization process (marketing): the company currently has marketing content providers.
 
-We have chosen as a process to model the sales process of the service because, firstly, this process represents the source of most of VoyageAuto's income and secondly, the analysis of its Data Warehouse (DW) will be richer compared to the others. mentioned processes, which will allow, with Business Intelligence (BI), to discover potentially interesting information that will help in decision-making.
-The sales process therefore responds to optimization needs, if any, and uncertainties raised during the initial meeting with the company representative.
+Modeling steps 
+https://app.creately.com/d/MPreMrvexWK/view
 
-Modeling steps,   link : https://app.creately.com/d/MPreMrvexWK/view
-Business process: According to the KImball method we should represent our business process (at the lower level) as action verbs, in these cases we say that the simplest process of our sales model is the processing of reservations of vehicles. This process is typically supported for VoyageAuto's reservation system and generates or produces Key Performance Indicators (KPIs) that will be used to build our fact table.
-Grain: As the grain represents the level of detail of the simplest or atomic data, in our case, the most granular data is a reserved vehicle in VoyageAuto's reservation system.
+Business process: 
+According to the KImball method we represent the business process at the lower level, so we say that the simplest process of our sales model is the processing of reservations of vehicles. This process is typically supported for VoyageAuto's reservation system and generates or produces Key Performance Indicators (KPIs) that will be used to build our fact table.
 
-Identify the dimensions: With the grain it is easier to determine the dimensions of our model.
-● Vehicle Dimension with the hierarchy attributes of make, model, color, year (of manufacture), mileage, availability and condition of the rental vehicle are required to describe the vehicle and provide full details.
-● Date dimension, with the hierarchy attributes date, month, quarter, year are needed to display, for example, the promotion start date and the end date of a booking, promotion, etc.
-● Reservation dimension, with the attributes type of reservation and type of incidents that take place during the rental, as the remaining descriptive fields in a reservation process in the company's system.
-● Customer dimension, we have typical attributes like customer ID, name, address
+Grain: 
+As the grain represents the level of detail of the simplest or atomic data, in our case, the most granular data is a reserved vehicle in VoyageAuto's reservation system.
+
+Identify the dimensions 
+
+● Vehicle Dimension with hierarchy attributes of make, model, color, year (of manufacture), mileage, availability and condition of the rental vehicle are required to describe the vehicle and provide full details.
+● Date dimension, with hierarchy attributes date, month, quarter, year are needed to display, for example, the promotion start date and the end date of a booking, promotion, etc.
+● Reservation dimension, with typical attributes  of reservation and type of incidents that take place during the rental, as the remaining descriptive fields in a reservation process in the company's system.
+● Customer dimension, with  typical attributes like customer ID, name, address
 ● Branch Dimension, with hierarchy attributes of Branch ID, Branch Name and Address, Provincial Company ID, Company Name, and so on. This gives all the information about a large number of branches covering each of the provinces and the several provincial companies but also represents the starting and ending points of a reservation.
 ● Dimension Promotion, apparently a significant portion of revenue comes from promotion on its regular rates.,with descriptive attributes such as name or promotion code we can analyze, for example, under which promotion a vehicle has been reserved.
 
-Identifying the facts This step involves answering the following questions:
-1) Was the promotion profitable? In other words, if the number of reservations has increased over the last year?
+Identify the fact table
+This step involves answering the following questions:
+
+1) Was the promotion profitable? 
+In other words, if the number of reservations has increased over the last year?
 2) Were there any branches that rented more vehicles in the past year?
-3) Who are the top 5 customers who have made the most reservations? How much does this represent in total overview?
+3) Who are the top 5 customers who have made the most reservations? 
+How much does this represent in total overview?
 4) Which vehicle brand made the highest profit?
 5) What is the primary location of these people (customers) renting online?
-6) If the products on promotion showed a drop in rental just before or after the promotion thus nullifying any gain.
+6) Whether the products on promotion showed a drop in rental just before or after the promotion thus nullifying any gain.
 7) How much do we make on rental in the last fiscal year? How does this compare to the last 2 years?
-8) Which types of reservations are most used: by counter, by telephone or by internet? Which generates less profit?
+8) Which types of reservations are most used: by counter, by telephone or by internet? 
+Which generates less profit?
