@@ -10,7 +10,7 @@ Modeling steps
 https://app.creately.com/d/MPreMrvexWK/view
 
 Business process: 
-According to the KImball method we represent the business process at the lower level, so we say that the simplest process of our sales model is the processing of reservations of vehicles. This process is typically supported for VoyageAuto's reservation system and generates or produces Key Performance Indicators (KPIs) that will be used to build our fact table.
+According to KImball method we represent the business process at the lower level, so we say that the simplest process of our sales model is the processing of reservations of vehicles. This process is typically supported for VoyageAuto's reservation system and generates or produces Key Performance Indicators (KPIs) that will be used to build our fact table.
 
 Grain: 
 As the grain represents the level of detail of the simplest or atomic data, in our case, the most granular data is a reserved vehicle in VoyageAuto's reservation system.
