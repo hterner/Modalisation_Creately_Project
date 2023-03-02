@@ -1,4 +1,4 @@
- In order to establish a few sample business processes, we have selected  the most common that represent the main operations carried out by the rental service company Voyage Auto:
+ In order to establish a few sample business processes, we have selected  the most common operations carried out by the rental service company Voyage Auto:
 
 ● Sales revenue: the company is interested in the performance of its revenue obtained from the rental of vehicles.
 ● Customer service: the company wants to know the level of satisfaction during and after the sales process as well as the commitment of its customers.
